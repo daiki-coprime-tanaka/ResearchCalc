@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>実験用アプリ</title>
+        <link rel="stylesheet" href="./index.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <script src="./index.js"></script>
+        <header>
+            <h1>実験用アプリ/Applications for my graduation research(thesis)</h1>
+        </header>
+        <main>
+            <h2>Research calc</h2>
+                <p>Revise: 14th, October, 2026</p>
+
+            <h3>注意事項/Precaution</h3>
+            <ul class="dep0">
+                <li> ここで公開しているファイルは, 私の卒業研究と卒業論文用のものです.</li>
+                <li> ダウンロードしていただいて構いませんが, 私の研究終了までは頒布と改変はしないでいただけるとありがたいです.</li>
+                <li> 研究終了後は, ご自由に頒布・改変していただいて構いません.</li>
+                <li> The files made available here are for my graduation research and thesis.</li>
+                <li> You are welcome to download them, but I would appreciate it if you refrained from distributing or modifying them until my research is complete.</li>
+                <li> Once the research is finished, you are free to distribute or modify them as you wish.</li>
+            </ul>
+
+            <h3>内容</h3>
+            <ul class="dep0">
+                <li> すべてのアプリは, Baseを基に変更して作成しています.</li>
+                <li> いずれのアプリもSettings.htmlから起動します.</li>
+                <li> All applications are created by modifying the Base.</li>
+                <li> Each app is launched from Settings.html.</li>
+            </ul>
+
+            <h4>Base</h4>
+                <button class="Play" onclick='location.href="./Base/Settings.html"'>Baseを見る</button>
+                <button class="DL" onclick="downloadFile('./Base/Base.zip', 'Base.zip')">Base.zipをダウンロードする</button>
+            <ul class="dep1">
+                <li> 予備実験でいただいた意見を基に, 予備実験時のアプリを修正したものです.</li>
+                <li> This is a modified version of the app used in the preliminary experiment, based on the feedback received during that experiment.</li>
+            </ul>
+
+            <h4>RemoveButton</h4>
+                <button class="Play" onclick='location.href="./RemoveButton/Settings.html"'>RemoveButtonを見る</button>
+                <button class="DL" onclick="downloadFile('./RemoveButton/RemoveButton.zip', 'RemoveButton.zip')">RemoveButton.zipをダウンロードする</button>
+            <ul class="dep1">
+                <li> 回答確定ボタンを削除したものです.</li>
+                <li> I have removed the “Confirm Answer” button.</li>
+            </ul>
+            
+            <h4>ResetParams</h4>
+                <button class="Play" onclick='location.href="./ResetParams/Settings.html"'>ResetParamsを見る</button>
+                <button class="DL" onclick="downloadFile('./Resetparams/ResetParams.zip', 'Resetparams.zip')">ResetParams.zipをダウンロードする</button>
+            <ul class="dep1">
+                <li> Calc.htmlからSettings.htmlに戻ったときに問題数と難易度の値ががリセットされるものです.</li>
+                <li> This causes the values ​​for the number of questions and the difficulty level to reset when returning from Calc.html to Settings.html.</li>
+            </ul>
+            
+            <h4>WeakAppealOperator</h4>
+                <button class="Play" onclick='location.href="./WeakAppealOperator/Settings.html"'>WeakAppealOperatorを見る</button>
+                <button class="DL" onclick="downloadFile('./WeakAppealOperator/WeakAppealOperator.zip', 'WeakAppealOperator.zip')">WeakAppealOperator.zipをダウンロードする</button>
+            <ul class="dep1">
+                <li> ”/”演算子と”%”演算子についての注意を強調しないものです.</li>
+                <li> It does not emphasize the notes regarding the “/” and “%” operators.</li>
+            </ul>
+            
+            <h4>WeakAppealText</h4>
+                <button class="Play" onclick='location.href="./WeakAppealText/Settings.html"'>WeakAppealTextを見る</button>
+                <button class="DL" onclick="downloadFile('./WeakAppealText/WeakAppealText.zip', 'WeakAppealText.zip')">WeakAppealText.zipをダウンロードする</button>
+            <ul class="dep1">
+                <li> 問題数と難易度の値についての注意を強調しないものです.</li>
+                <li>It does not emphasize the notes regarding the number of questions and the difficulty levels.</li>
+            </ul>
+        </main>
+        <footer>
+            <p>Created By daiki TANAKA, 14, Oct, 2026</p>
+        </footer>
+        <script src="answer.js"></script>
+    </body>
+</html>
