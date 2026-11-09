@@ -1,1 +1,36 @@
-
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body onload="init()">
+        <header>
+            <meta charset="UTF-8">
+            <title>SS修正ページ</title>
+            <link rel="stylesheet" href="./Dev.css">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+        </header>
+        <main>
+            <div class="page active" id="Certification">
+                <h1>管理者画面</h1>
+                <p><span class="buf">パスワードを入力    </span>
+                <input type="password" maxlength="10" id="PW"></p>
+            </div>
+            <div class="page" id="Control">
+                <h1>Session Storage 値の書き換えページ</h1>
+                <p><span class="buf">dif : </span><input id="dif" type="number" name="dif" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>
+                <p><span class="buf">qty : </span><input id="qty" type="number" name="qty" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>
+                <button id="Reset" onclick="Reset()">規定値に戻す</button>
+            </div>
+            <p class="buf" style="white-space: pre-line;"><span id="mesg"></span><p></p>
+            <script src="./Dev.js"></script>
+        </main>
+        <footer>
+            <p class="buf-f">注意事項</p>
+            <ul class="dep0">
+                <li> このページはデバッグ用のページです. 実験参加者の方は使用しないでください.
+                <li> This is a debugging page. Please do not use it if you are a participant in the experiment.
+                <li> 此页面为调试专用页面。实验参与者请勿使用。
+            </ul>
+        </footer>
+    </body>
+</html>

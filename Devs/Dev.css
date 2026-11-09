@@ -1,0 +1,51 @@
+:root {
+    --base: #EEE;
+    --text: #000;
+    --main: #F11;
+    --accent: #1FF;
+}
+
+html {
+    font-size: 62.5%;
+    background: var(--base);
+    color: var(--text);
+    font-weight: 400;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.buf{
+    font-size: 3.0rem;
+    color: var(--main);
+    font-weight: 1600;
+}
+
+.buf-f{
+    font-size: 2.5rem;
+    color: var(--main);
+    font-weight: 1200;
+}
+
+.page {
+    display: none;
+}
+
+.page.active{
+    display: block;
+}
+
+input{
+    font-size: 3.6rem;
+    color: #222;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+button {
+    background-color: var(--accent);
+    color: var(--text);
+    font-size: 2.4rem;
+    font-weight: 1200;
+}
