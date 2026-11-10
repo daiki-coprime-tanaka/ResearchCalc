@@ -17,12 +17,15 @@
             </div>
             <div class="page" id="Control">
                 <h1>Session Storage 値の書き換えページ</h1>
-                <p><span class="buf">dif : </span><input id="dif" type="number" name="dif" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>
-                <p><span class="buf">qty : </span><input id="qty" type="number" name="qty" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>
-                <button id="Reset" onclick="Reset()">規定値に戻す</button>
+                <!--<p><span class="buf">dif : </span><input id="dif" type="number" name="dif" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>
+                <p><span class="buf">qty : </span><input id="qty" type="number" name="qty" inputmode="numeric" placeholder="(例) 10" pattern="[0-9]+" min="1" max="9999"></p>-->
+                <p><span class="buf">dif : </span><span id="dif"></span></p>
+                <p><span class="buf">qty : </span><span id="qty"></span></p>
+                <button id="Reset" onclick="operationReset()">規定値に戻す</button>
             </div>
             <p class="buf" style="white-space: pre-line;"><span id="mesg"></span><p></p>
             <script src="./Dev.js"></script>
+            <script src="./general.js"></script>
         </main>
         <footer>
             <p class="buf-f">注意事項</p>

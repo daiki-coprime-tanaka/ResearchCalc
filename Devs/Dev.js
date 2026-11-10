@@ -2,7 +2,7 @@ const salt = "CalcThesis", answer = "tc3BHBcSs/rfP91jj2BFi7JjgPZc9rFNbxY/YkVOUsA
 const PW = document.getElementById('PW');
 const DIF = document.getElementById('dif');
 const QTY = document.getElementById('qty');
-const CORRECT = 1, WRONG = -1, DIF_DEFAULT = 10, QTY_DEFAULT = 10;
+const CORRECT = 1, WRONG = -1;
 
 /**
  * @brief 初期化関数
@@ -41,7 +41,7 @@ function PageShift(id) {
  * @param {number} val 
  */
 function SetValue(obj, val) {
-    document.getElementById(obj).value = val;
+    document.getElementById(obj).innerHTML = val;
 }
 
 function SetStorage(obj, val) {
@@ -54,17 +54,32 @@ PW.addEventListener('change', function() {
     hashPassword(PW.value);
 }, false)
 
-DIF.addEventListener('change', function() {
+/*DIF.addEventListener('change', function() {
     SetStorage('dif', DIF.value);
 }, false)
 
 QTY.addEventListener('change', function() {
     SetStorage('qty', QTY.value);
-}, false)
+}, false)*/
 
-function Reset() {
-    SetStorage('dif', DIF_DEFAULT);
-    SetStorage('qty', QTY_DEFAULT);
+/**
+ * @brief Session Storageから初期値をロードする.
+ * @param {string} dif - 難易度
+ * @param {string} qty - 問題数
+ */
+function dispValues(dif, qty) {
+    if(DIFFICULTY != null) {
+        SetStorage(DIFFICULTY, dif);
+    }
+    if(QUANTITY != null) {
+        SetStorage(QUANTITY, qty);
+    }
+}
+
+function operationReset() {
+    sendSignal(RESET);
+    resetParameters();
+    dispValues(DEFAULT.dif, DEFAULT.qty);
 }
 
 function bufferToBase64(buffer) {
@@ -77,7 +92,6 @@ function bufferToBase64(buffer) {
 /**
  * ソルト付きパスワードハッシュ生成
  * @param {string} password - 平文パスワード
- * @returns {{salt: string, hash: string}} ソルトとハッシュ値
  */
 async function hashPassword(password) {
     if (typeof password !== 'string' || password.length === 0) {
