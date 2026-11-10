@@ -1,10 +1,21 @@
+:root {
+    --main: #06C;
+    --accent: #C60;
+    --text: #222;
+    --base: #EEE;
+
+    --App: #0A0;
+    --Exp: #94B;
+    --Ope: #779;
+}
+
 body {
     font-family: sans-serif;
     margin: 20px;
 }
 
 h1 {
-    color: #0066cc;
+    color: var(--main);
 }
 
 ul.dep0 >  li{
@@ -16,33 +27,84 @@ ul.dep1 > li{
 }
 
 button.Play {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #007bff;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: var(--main);/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
 }
 
 button.Play:active {
-  /*ボタンを押したとき*/
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+    /*ボタンを押したとき*/
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
 }
 
 button.DL {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #ff007b;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #BBB;/*ボタン色*/
+    color: #222;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
 }
 
 button.DL:active {
-  /*ボタンを押したとき*/
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
+    /*ボタンを押したとき*/
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.shaded {
+    color: #888;
+}
+
+button.SB {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: var(--Ope);/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+button.SB:active{
+    transform: translateY(4pt);
+    border-bottom: none;
+}
+
+.Base {
+    border-left: 8px solid var(--App);
+    padding-left: 10px;
+    h4 {
+        color: var(--App);
+    }
+}
+
+.RB, .RP, .WAO, .WAT{
+    border-left: 8px solid var(--Exp);
+    padding-left: 10px;
+    h4 {
+        color: var(--Exp);
+    }
+}
+
+.shaded {
+    border-left: 8px solid var(--Ope);
+    padding-left: 10px;
+    h4 {
+        color: var(--Ope);
+    }
+}
+
+.DaikiApp {
+    border-left: 8px solid var(--text);
+    padding-left: 10px;
+    h4 {
+        color: var(--text);
+    }
 }

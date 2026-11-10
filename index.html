@@ -33,45 +33,83 @@
                 <li> Each app is launched from Settings.html.</li>
             </ul>
 
-            <h4>Base</h4>
-                <button class="Play" onclick='location.href="./Base/Settings.html"'>Baseを見る</button>
-                <button class="DL" onclick="downloadFile('./Base/Base.zip', 'Base.zip')">Base.zipをダウンロードする</button>
-            <ul class="dep1">
-                <li> 予備実験でいただいた意見を基に, 予備実験時のアプリを修正したものです.</li>
-                <li> This is a modified version of the app used in the preliminary experiment, based on the feedback received during that experiment.</li>
-            </ul>
+            <div class="Base">
+                <h4>Base</h4>
+                    <button class="Play" onclick='location.href="./Base/Settings.html"'>Baseを見る</button>
+                    <button class="DL" onclick="downloadFile('./Base/Base.zip', 'Base.zip')">Base.zipをダウンロードする</button>
+                <ul class="dep1">
+                    <li> 予備実験でいただいた意見を基に, 予備実験時のアプリを修正したものです.</li>
+                    <li> This is a modified version of the app used in the preliminary experiment, based on the feedback received during that experiment.</li>
+                </ul>
+            </div>
 
-            <h4>RemoveButton</h4>
-                <button class="Play" onclick='location.href="./RemoveButton/Settings.html"'>RemoveButtonを見る</button>
-                <button class="DL" onclick="downloadFile('./RemoveButton/RemoveButton.zip', 'RemoveButton.zip')">RemoveButton.zipをダウンロードする</button>
-            <ul class="dep1">
-                <li> 回答確定ボタンを削除したものです.</li>
-                <li> I have removed the “Confirm Answer” button.</li>
-            </ul>
+            <div class="RB">
+                <h4>RemoveButton</h4>
+                    <button class="Play" onclick='location.href="./RemoveButton/Settings.html"'>RemoveButtonを見る</button>
+                    <button class="DL" onclick="downloadFile('./RemoveButton/RemoveButton.zip', 'RemoveButton.zip')">RemoveButton.zipをダウンロードする</button>
+                <ul class="dep1">
+                    <li> 回答確定ボタンを削除したものです.</li>
+                    <li> I have removed the “Confirm Answer” button.</li>
+                </ul>
+            </div>
+
+            <div class="RP">
+                <h4>ResetParams</h4>
+                    <button class="Play" onclick='location.href="./ResetParams/Settings.html"'>ResetParamsを見る</button>
+                    <button class="DL" onclick="downloadFile('./Resetparams/ResetParam.zip', 'Resetparam.zip')">ResetParams.zipをダウンロードする</button>
+                <ul class="dep1">
+                    <li> Calc.htmlからSettings.htmlに戻ったときに問題数と難易度の値ががリセットされるものです.</li>
+                    <li> This causes the values ​​for the number of questions and the difficulty level to reset when returning from Calc.html to Settings.html.</li>
+                </ul>
+            </div>
+
+            <div class="WAO">
+                <h4>WeakAppealOperator</h4>
+                    <button class="Play" onclick='location.href="./WeakAppealOperator/Settings.html"'>WeakAppealOperatorを見る</button>
+                    <button class="DL" onclick="downloadFile('./WeakAppealOperator/WeakAppealOperator.zip', 'WeakAppealOperator.zip')">WeakAppealOperator.zipをダウンロードする</button>
+                <ul class="dep1">
+                    <li> "/"演算子と"%"演算子についての注意を強調しないものです.</li>
+                    <li> It does not emphasize the notes regarding the “/” and “%” operators.</li>
+                </ul>
+            </div>
             
-            <h4>ResetParams</h4>
-                <button class="Play" onclick='location.href="./ResetParams/Settings.html"'>ResetParamsを見る</button>
-                <button class="DL" onclick="downloadFile('./ResetParams/ResetParams.zip', 'ResetParams.zip')">ResetParams.zipをダウンロードする</button>
-            <ul class="dep1">
-                <li> Calc.htmlからSettings.htmlに戻ったときに問題数と難易度の値ががリセットされるものです.</li>
-                <li> This causes the values ​​for the number of questions and the difficulty level to reset when returning from Calc.html to Settings.html.</li>
-            </ul>
-            
-            <h4>WeakAppealOperator</h4>
-                <button class="Play" onclick='location.href="./WeakAppealOperator/Settings.html"'>WeakAppealOperatorを見る</button>
-                <button class="DL" onclick="downloadFile('./WeakAppealOperator/WeakAppealOperator.zip', 'WeakAppealOperator.zip')">WeakAppealOperator.zipをダウンロードする</button>
-            <ul class="dep1">
-                <li> ”/”演算子と”%”演算子についての注意を強調しないものです.</li>
-                <li> It does not emphasize the notes regarding the “/” and “%” operators.</li>
-            </ul>
-            
-            <h4>WeakAppealText</h4>
-                <button class="Play" onclick='location.href="./WeakAppealText/Settings.html"'>WeakAppealTextを見る</button>
-                <button class="DL" onclick="downloadFile('./WeakAppealText/WeakAppealText.zip', 'WeakAppealText.zip')">WeakAppealText.zipをダウンロードする</button>
-            <ul class="dep1">
-                <li> 問題数と難易度の値についての注意を強調しないものです.</li>
-                <li>It does not emphasize the notes regarding the number of questions and the difficulty levels.</li>
-            </ul>
+            <div class="WAT">
+                <h4>WeakAppealText</h4>
+                    <button class="Play" onclick='location.href="./WeakAppealText/Settings.html"'>WeakAppealTextを見る</button>
+                    <button class="DL" onclick="downloadFile('./WeakAppealText/WeakAppealText.zip', 'WeakAppealText.zip')">WeakAppealText.zipをダウンロードする</button>
+                <ul class="dep1">
+                    <li> 問題数と難易度の値についての注意を強調しないものです.</li>
+                    <li>It does not emphasize the notes regarding the number of questions and the difficulty levels.</li>
+                </ul>
+            </div>
+
+            <div class="shaded">
+                <h4>Management Page</h4>
+                    <button class="SB" onclick='location.href="./Devs/Dev.html"'>管理ページ(要管理者権限)</button>
+                <ul class="dep1">
+                    <li> このページはデバッグ用のページです. 実験参加者の方は使用しないでください.
+                    <li> This is a debugging page. Please do not use it if you are a participant in the experiment.
+                    <li> 此页面为调试专用页面。实验参与者请勿使用。
+                </ul>
+            </div>
+
+            <div class="DaikiApp">
+                <h4>初版</h4>
+                    <button class="Play" onclick='location.href="https://daiki-coprime-tanaka.github.io/MadeCalc/Calc/Settings.html"'>初版を見る</button>
+                <ul class="dep1">
+                    <li> 実験者のHPで公開している計算トレーニングアプリの初版です.</li>
+                    <li> This is the first version of a calculation training app, available on the experimenter's website.</li>
+                </ul>
+            </div>
+
+            <div class="DaikiApp">
+                <h4>第２版</h4>
+                    <button class="Play" onclick='location.href="https://daiki-coprime-tanaka.github.io/MadeCalc/CalcII/SettingsII.html"'>第２版を見る</button>
+                <ul class="dep1">
+                    <li> 実験者のHPで公開している計算トレーニングアプリの第２版です.</li>
+                    <li> This is the second version of a calculation training app, available on the experimenter's website.</li>
+                </ul>
+            </div>
         </main>
         <footer>
             <p>Created By daiki TANAKA, 14, Oct, 2026</p>
